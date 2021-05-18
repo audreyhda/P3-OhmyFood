@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// 1. BASE Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typo',
+  'base/reset';
+
+// 2. UTILS 
+@import
+  'utils/variables';
+
+// 3. LAYOUTS 
+@import
+  'layouts/header',
+  'layouts/navigation',
+  'layouts/footer';
+
+// 4. COMPONENTS
+@import
+  'components/button';
+
+// 5. PAGES 
+@import
+  'pages/home/accueil',
+  'pages/menu/entrees-3',
+  'pages/menu/entrees-4';
+
+
+

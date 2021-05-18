@@ -1,0 +1,21 @@
+header  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% 0% 0% 0%;
+
+}
+header p {
+    margin-left: 5%;
+}
+header img {
+    width: 50%;
+    margin: 5%;
+}
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $background-color-secondary;
+    padding: 5%;
+}

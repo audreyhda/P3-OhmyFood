@@ -1,0 +1,27 @@
+.section-resto img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.contener-resto {
+     box-shadow: 5px 5px 5px 5px $background-color-secondary;
+    border-radius: 20px 20px 20px 20px;
+    margin: 7% 5%;
+}
+.contener-resto-text {
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+        &__i {
+            margin-top: 5%;
+        }
+}
+.text {
+    width: 80%;
+}
+
+.section-resto {
+    padding: 5%;
+    background-color: $background-color-primary;
+}

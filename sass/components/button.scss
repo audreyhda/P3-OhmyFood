@@ -1,0 +1,44 @@
+.button {
+    display:flex;
+    justify-content: space-between;
+    border-radius: 20px 20px 20px 20px;
+    padding: 8% 5%;
+    margin: 2% 0% 6% 0%;
+    background-color:$background-color-primary;
+    box-shadow: 5px 5px 5px $background-color-secondary;
+
+}
+.contener-button {
+    align-content: center;
+    padding: 5%;
+}
+.section-nav li {
+    display: inline;
+    align-content: space-between;
+    width:100%;
+    list-style: none;
+}
+
+.button-explorer , .order-button {
+    background: $color-highlight;
+    color:white;
+    border-radius: 25px ;
+    padding: 5% 8%;
+    margin: 2% 0% 3% 0%;
+}
+.order-button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 10% 0% 5% 17%;
+}
+.span-icone{
+    position: relative; 
+    left:-30px;
+    border: solid;
+    border-color:$color-highlight;
+    border-radius: 50%;
+    padding: 5px 10px ;
+    background: $color-highlight;
+    color:white;
+}

@@ -1,0 +1,21 @@
+footer {
+    background-color: $background-color-tertiary;
+    color: $color-footer-text;
+    padding: 5%;
+    margin-top: 5%;
+    line-height: 1.5rem;
+}
+footer h4{
+    font-family: shrikhand;
+    margin-bottom: 5%;
+}
+footer li {
+    list-style: none;
+
+}
+.icone-footer {
+    display: flex;
+}
+footer i {
+    padding-right: 6px;
+}
