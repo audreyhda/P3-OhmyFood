@@ -3,14 +3,22 @@ header  {
     flex-wrap: wrap;
     justify-content: center;
     margin: 5% 0% 0% 0%;
-
-}
-header p {
+    & p {
     margin-left: 5%;
-}
-header img {
-    width: 50%;
+    }
+    & img {
+    justify-items: center;
+    width: 45%;
     margin: 5%;
+    }
+}
+.header-menu {
+    display: flex;
+    & .arrow {
+    align-content: center;
+    color: black;
+    margin: 7% 15% 5% 2%;
+    }
 }
 .header-nav {
     width: 100%;
@@ -18,4 +26,16 @@ header img {
     justify-content: center;
     background-color: $background-color-secondary;
     padding: 5%;
+}
+
+/* Media queries Tablette*/
+@media only screen and (min-width: 700px) {
+.section-recherche {
+    padding: 0;
+}
+}
+
+/* Media queries Desktop*/
+@media only screen and (min-width: 990px) {
+
 }

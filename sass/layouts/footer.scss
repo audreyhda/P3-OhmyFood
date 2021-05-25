@@ -2,20 +2,71 @@ footer {
     background-color: $background-color-tertiary;
     color: $color-footer-text;
     padding: 5%;
-    margin-top: 5%;
-    line-height: 1.5rem;
-}
-footer h4{
-    font-family: shrikhand;
-    margin-bottom: 5%;
-}
-footer li {
-    list-style: none;
-
+    & h4 {
+        margin-bottom: 5%;
+    }
+    & li {
+        list-style: none;
+        text-decoration: none;
+    }
+    & i {
+        padding-right: 10px;
+        display: flex; 
+        align-items: center;
+    }
+    & a:visited , & a:link {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 .icone-footer {
     display: flex;
 }
-footer i {
-    padding-right: 6px;
+.fa-utensils:before , .fa-hands-helping:before{
+    font-size: small;
+}
+.fa-hands-helping:before {
+    font-size: x-small;
+}
+
+/* Media queries Tablette*/
+@media only screen and (min-width: 700px) {
+footer {
+    padding: 2%;
+    & ul {
+    display:flex;
+    flex-wrap: wrap;
+    }  
+    & h4 {
+    font-size: 25px;
+    margin-bottom: 2%;
+    }     
+    & li {
+    font-size: 15px;
+    width: 50%;
+    line-height: 2rem;
+    }
+}
+.icone-footer{
+    font-size: 15px;
+    width: 50%;
+    line-height: 2rem;
+    & li{
+    flex-wrap: nowrap;
+    }
+    & i {
+    font-size: 18px;
+    }
+}
+}
+
+/* Media queries Desktop*/
+@media only screen and (min-width: 990px) {
+
+footer li , .icone-footer{
+    font-size: 20px;
+}
+footer h4 {
+    font-size: 25px;
+}
 }

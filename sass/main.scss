@@ -1,15 +1,17 @@
 @charset "UTF-8";
 
-// 1. BASE Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typo',
-  'base/reset';
+// 1. BASE 
+@import 
+'base/base',
+'base/typo',
+'base/reset';
+
 
 // 2. UTILS 
 @import
-  'utils/variables';
+  'utils/variables',
+  'utils/transitions';
+
 
 // 3. LAYOUTS 
 @import
@@ -24,8 +26,7 @@
 // 5. PAGES 
 @import
   'pages/home/accueil',
-  'pages/menu/entrees-3',
-  'pages/menu/entrees-4';
+  'pages/menu/menu-resto';
 
 
 
