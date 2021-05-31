@@ -12,10 +12,10 @@ header p {
 }
 footer {
     line-height: 1.75rem;
-    font-size: 15px;
+    font-size: 16px;
 }
 h1, h2, h3 , h4 {
-    font-weight: 700;
+    font-weight: 500;
 }
 footer h4{
     font-family: shrikhand;
@@ -34,7 +34,7 @@ footer h4{
     line-height: 1.5rem;   
 }
 .section-nav h2 , .section-resto h2{
-    font-size: 25px; 
+    font-size: 24px; 
 }
 .section-nav li i {
     color: #353535;
@@ -45,19 +45,18 @@ footer h4{
     font-size: 15px;
 }
 .section-nav li {
-     font-weight: bold;
+     font-weight: 500;
      font-size: 16px;
 }
-.text {
-    width: 80%;
-    font-size: 17px;
-}
+
 .text h3 {
     line-height: 1.5rem;
+    font-size: 18px;
 }
 .text p {
-    font-weight: 100;
+    font-weight: 300;
     line-height: 2rem;
+    font-size:16px;
 }
 .contener-resto-text i {
     font-size: 22px;
@@ -70,11 +69,11 @@ footer h4{
 /* Pages Menu */
 .main-menu h1 {
     font-family:  'shrikhand';
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bold;
 }
 .main-menu h2 {
-    line-height: 3rem;
+    line-height: 2rem;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 300;
@@ -83,7 +82,6 @@ footer h4{
     text-overflow: ellipsis;
     font-weight: 600;
     font-size: 18px;
-    margin-bottom:2%;
 }
 .food-text h3 {
     width: 100%;
@@ -95,32 +93,41 @@ footer h4{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-size: 15px;
+    font-weight: 100;
 }
-
+.price-button {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2rem;
+}
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
-.header-nav  p ,  .header-nav i{
+.section-recherche h1 , .h1-heart h1 {
+    font-size: 34px;
+}
+.section-nav h2 , .section-resto h2 , .main-menu h2 {
+    font-size: 30px;
+}
+.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i , .foodlist h3  {
+    font-size: 25px;
+}
+.section-recherche p , .button-explorer , .foodlist p , , .price-button {
+    font-size: 22px;
+}
+.header-nav  p ,  .header-nav i {
     font-size: 20px;
 }
-.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i{
-    font-size: 23px;
-}
+
 .contener-resto p , .contener-resto-nouveau p{
     font-size: 19px;
 }
+.button-explorer, .order-button {
+    font-size: 22px;
+}
 .button-text {
     font-size: 16px;
-}
-.section-recherche h1 {
-    font-size: 29px;
-}
-.section-nav h2 , .section-resto h2 {
-    font-size: 31px;
-}
-.section-recherche p , .button-explorer{
-    font-size: 22px;
 }
 
 }
@@ -130,8 +137,8 @@ footer h4{
 .header-nav  p ,  .header-nav i{
     font-size: 22px;
 }
-.section-recherche h1 {
-    font-size: 34px;
+.section-recherche h1 , .h1-heart h1 {
+    font-size: 40px;
 }
  .section-recherche p , .button-explorer{
     font-size: 25px;
@@ -141,5 +148,8 @@ footer h4{
 }
 .contener-resto p , .contener-resto-nouveau p{
     font-size: 24px;
+}
+.button-text {
+    font-size: 22px;
 }
 }

@@ -5,8 +5,8 @@
     display:flex;
     align-items: center;
     border-radius: 20px 20px 20px 20px;
-    padding: 5%;
-    margin: 2% 0% 6% 0%;
+    padding: 8% 5%;
+    margin: 2% 0% 7% 0%;
     background-color:$background-color-primary;
     box-shadow: 5px 5px 5px $background-color-secondary;
     }
@@ -18,11 +18,13 @@
     display: flex;
     list-style: none;
 }
-.button .button-text {
+.button {
+    & .button-text {
     width:100%;
-}
-.button li {
+    }
+    & .li {
     align-items: center;
+}
 }
 .button-explorer {
     background: linear-gradient(#EA72DA ,#9356dc);
@@ -65,57 +67,72 @@
     font-weight: 300;
 }
 .btn-nouveau {
-   display: inline-block;
-   position: relative;
-   top: -200px; 
-   right: -230px;
+    display: inline-block;
+    position: absolute;
+    top: 1rem!important; 
+    right: 1rem!important;
     background-color: $color-highlight-secondary;
     text-transform: capitalize;
     color: $color-highlight-tertiary;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     padding: 2% 3%;
 }
 .contener-resto .btn-nouveau {
     visibility: hidden;
 }
-.heart-icon2  {  
-    position: relative;
-    left: -100px;
-    font-weight: 100;
-    color: linear-gradient(#EA72DA ,#9356dc);
+.div-heart , .div-h1-heart{ 
+    position: relative; 
+    background-color: black;
+    width:2rem;
+    height:3rem;
+    &::before {
+        position: absolute;
+        width:100%;
+        height:100%;
+        content:"";
+        top:0;
+        left:0;
+        opacity: 0;
+        background: linear-gradient(#EA72DA ,#9356dc);
+        transition: .3s;
+    }
+    &:active::before {
+        opacity:1;
+    }
+    &:active .far {
+        opacity:0;
+    }
 }
-.h1-heart .heart-icon1, .h1-heart .heart-icon2, {
+.div-h1-heart .heart-icon {
+    background-color:$background-color-primary!important;
+}
+.div-heart .heart-icon {
+    background-color:white!important;
+}
+.heart-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode:lighten;
     font-size: 25px;
-    margin-left: 5%;
 }
-/* */
 .price-button {
-    display : flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px; 
-    position: relative; 
-    top: -20px;
-    right: -150px;
-    border-radius: 0px 20px 20px 0px;
-    font-weight: 700;
-    margin-right: 10%;
+    margin-right: 2%;
 }
+
 .validation-button {
-    visibility: hidden;
-    display : flex;
+    background-color : $color-highlight-secondary;
+    padding: 1rem;
+    width: 2.3rem;
+    height: 3.6rem;
+    transition: all .5s ease;
     align-items: center;
     justify-content: center;
-    justify-items: center;
-    height: 90px; 
-    width: 60px;
-    position: relative; 
-    top: -112px;
-    right: -350px;
-    border-radius: 0px 20px 20px 0px;
-    padding: 2% 3% 2% 1%;
-    background-color : $color-highlight-secondary;
+    display: flex;
+    margin: -1rem -5rem -1rem 1rem;
 }
 .fa-check-circle {
     align-self: center;
@@ -140,11 +157,10 @@
     width: 100%;
     justify-content:center;
     }
-}
-.button {
+    & .button {
     width: 27%;
     margin: 1% 3% 1% 1%;
-    padding: 2%;
+    padding: 4%;
     & li , & .span-icone, & i{
     font-size: 19px;
     }
@@ -155,17 +171,26 @@
     width:100%;
     }
 }
+}
 .span-icone{
-    left: -30px;
+    left: -35px;
     padding: 1.5% 3%;
+    left:-35px;
 }
 .button-explorer, .order-button {
     padding: 3%;
-    font-size: 22px;
+}
+.button-explorer{
+    margin: 2%;
 }
 .btn-nouveau {
    top: -200px; 
    right: -230px;
+}
+.validation-button {
+    width: 2.3rem;
+    height: 3rem;
+    margin: -1rem -5rem -1rem 1rem;
 }
 }
 
@@ -174,4 +199,13 @@
 .button li , .button .span-icone, .button i{
     font-size: 22px;
 }
+.div-heart{
+    &:hover::before{
+        opacity: 1;
+
+    }
+    &:hover .far{
+        opacity: 0;
+    }
+    }
 }

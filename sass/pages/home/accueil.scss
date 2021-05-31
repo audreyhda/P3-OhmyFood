@@ -1,5 +1,5 @@
 .section-resto {
-    padding: 10% 5% 20% 5%;
+    padding: 9% 5% 20% 5%;
     background-color: $background-color-primary;
     & img {
     object-fit: cover;
@@ -11,11 +11,16 @@
 .contener-resto-nouveau , .contener-resto  {
     box-shadow: 5px 5px 5px 5px $background-color-secondary;
     border-radius: 20px 20px 20px 20px;
-    margin: 5% 2%;
+    margin: 6% 2%;
+    background-color: white;
+    padding-bottom: 10%;
+}
+.contener-resto-nouveau   {
+    position:relative;
 }
 .contener-resto-text {
     height: 30px;
-    margin: 3% 5% 0% 5%;
+    margin: 3% 3% 0% 5%;
     display: flex;
     justify-content: space-between;
     & i {
@@ -23,15 +28,22 @@
     align-items: center;
     }
 }
+.text {
+    width: 80%;
+}
 
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
-.section-recherche h1 {
+.section-recherche {
+    padding: 0;
+    & h1 {
+    margin: 2%;
+    & p {
     margin: 2%;
 }
- .section-recherche p , .button-explorer{
-    margin: 2%;
 }
+}
+
 .div-resto  {
     display: flex;
     flex-wrap: wrap;
@@ -39,8 +51,10 @@
 .contener-resto , .contener-resto-nouveau {
     width: 45%;
     margin-top: 1%;
+    padding-bottom: 5%;
 }
 }
+
 
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {

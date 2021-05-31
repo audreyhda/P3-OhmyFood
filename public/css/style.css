@@ -23,11 +23,11 @@ header p {
 
 footer {
   line-height: 1.75rem;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4 {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 footer h4 {
@@ -49,7 +49,7 @@ footer h4 {
 }
 
 .section-nav h2, .section-resto h2 {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .section-nav li i {
@@ -63,22 +63,19 @@ footer h4 {
 }
 
 .section-nav li {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-}
-
-.text {
-  width: 80%;
-  font-size: 17px;
 }
 
 .text h3 {
   line-height: 1.5rem;
+  font-size: 18px;
 }
 
 .text p {
-  font-weight: 100;
+  font-weight: 300;
   line-height: 2rem;
+  font-size: 16px;
 }
 
 .contener-resto-text i {
@@ -93,12 +90,12 @@ footer h4 {
 /* Pages Menu */
 .main-menu h1 {
   font-family: "shrikhand";
-  font-size: 25px;
+  font-size: 27px;
   font-weight: bold;
 }
 
 .main-menu h2 {
-  line-height: 3rem;
+  line-height: 2rem;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
@@ -108,7 +105,6 @@ footer h4 {
   text-overflow: ellipsis;
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 2%;
 }
 
 .food-text h3 {
@@ -122,38 +118,49 @@ footer h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-size: 15px;
+  font-weight: 100;
+}
+
+.price-button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
-  .header-nav p, .header-nav i {
-    font-size: 20px;
+  .section-recherche h1, .h1-heart h1 {
+    font-size: 34px;
   }
 
-  .contener-resto h3, .contener-resto-nouveau h3, .contener-resto i, .contener-resto-nouveau i {
-    font-size: 23px;
+  .section-nav h2, .section-resto h2, .main-menu h2 {
+    font-size: 30px;
+  }
+
+  .contener-resto h3, .contener-resto-nouveau h3, .contener-resto i, .contener-resto-nouveau i, .foodlist h3 {
+    font-size: 25px;
+  }
+
+  .section-recherche p, .button-explorer, .foodlist p, .price-button {
+    font-size: 22px;
+  }
+
+  .header-nav p, .header-nav i {
+    font-size: 20px;
   }
 
   .contener-resto p, .contener-resto-nouveau p {
     font-size: 19px;
   }
 
+  .button-explorer, .order-button {
+    font-size: 22px;
+  }
+
   .button-text {
     font-size: 16px;
-  }
-
-  .section-recherche h1 {
-    font-size: 29px;
-  }
-
-  .section-nav h2, .section-resto h2 {
-    font-size: 31px;
-  }
-
-  .section-recherche p, .button-explorer {
-    font-size: 22px;
   }
 }
 /* Media queries Desktop*/
@@ -162,8 +169,8 @@ footer h4 {
     font-size: 22px;
   }
 
-  .section-recherche h1 {
-    font-size: 34px;
+  .section-recherche h1, .h1-heart h1 {
+    font-size: 40px;
   }
 
   .section-recherche p, .button-explorer {
@@ -176,6 +183,10 @@ footer h4 {
 
   .contener-resto p, .contener-resto-nouveau p {
     font-size: 24px;
+  }
+
+  .button-text {
+    font-size: 22px;
   }
 }
 * {
@@ -203,32 +214,32 @@ ol, ul {
   display: flex;
 }
 
-/* Sélection d'un plat*/
+/* Sélection d'un plat
 .transition:hover .price-button {
   right: -80px;
-  transition: right 0.5s ease-in-out;
+  transition: right .5s ease-in-out;
 }
-
 .transition:hover .validation-button {
-  right: -250px;
-  transition: right 0.5s ease-in-out;
-  visibility: visible;
+    right: -250px;
+    transition: right .5s ease-in-out;
+    visibility: visible;
 }
-
 .transition:hover .fa-check-circle {
-  transform: rotate(720deg);
-  transition: transform 0.7s ease-in-out;
+    transform: rotate(720deg);
+    transition: transform .7s ease-in-out;
 }
-
 .transition:hover .food-text {
-  width: 70%;
-  transition: width 0.9s ease-in-out;
+    width: 70%;
+    transition: width .9s ease-in-out;
 }
-
 .transition {
-  height: 50px;
+    height: 50px;
+}*/
+.foodlist:hover > .validation-button {
+  margin-right: -1rem;
 }
 
+/* heart*/
 /* Apparition progressive*/
 .main-menu .entrees {
   animation-name: appearing;
@@ -273,53 +284,78 @@ ol, ul {
 }
 /* Loading spinner*/
 .loading-spinner {
-  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 2;
-  animation: ease-in-out 3s linear;
+  z-index: -1000;
+  animation: spinner 2s;
+  background-color: black;
+  visibility: hidden;
 }
 
 .loading-spinner p {
-  font-weight: bold;
+  font-weight: 100;
+  font-size: 20px;
   font-family: shrikhand;
   position: absolute;
+  color: white;
 }
 
-.spinner-primary {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border: 20px double;
-  border-color: #9356DC transparent;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-.spinner-secondary {
+.spinner {
   position: absolute;
   width: 200px;
   height: 200px;
-  border: 10px dotted;
-  border-color: #FF79DA;
   border-radius: 50%;
-  animation: spin 1.3s linear infinite;
+  border: 16px solid transparent;
+  border-top-color: #9356DC;
+  border-right-color: #FF79DA;
+  border-bottom-color: #99E2D0;
+  border-left-color: rgba(255, 255, 255, 0.2);
+  animation: spin 2s linear infinite;
 }
 
-.spinner-tertiary {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border: 10px solid;
-  border-color: #99E2D0 transparent;
-  border-radius: 50%;
-  animation: spin 1.8s linear infinite;
+/*
+    background-color: $color-button-primary ;
+.spinner-primary{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border:5px double;
+    border-color: $color-button-primary transparent transparent transparent;
+    border-radius: 50%;
+    animation: spin 2.5s linear infinite;
 }
-
+.spinner-primary2{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 4px double;
+    border-color: transparent transparent $color-button-primary transparent ;
+    border-radius: 50%;
+    animation: spin .5s linear infinite;
+}
+.spinner-secondary{
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    border:10px dotted;
+    border-color: $color-button-secondary ;
+    border-radius: 50%;
+    animation: spin 1.3s linear infinite;
+}
+.spinner-secondary2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 8px solid;
+    border-color: $color-button-tertiary  transparent ;
+    border-radius: 50%;
+    animation: spin 1.8s linear infinite;
+}
+*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -328,12 +364,21 @@ ol, ul {
     transform: rotate(360deg);
   }
 }
-@keyframes ease-in-out {
+@keyframes spinner {
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+    display: none;
+    visibility: hidden;
+    z-index: 999;
+  }
   100% {
     opacity: 0;
+    display: none;
+    visibility: hidden;
+    z-index: 999;
   }
 }
 /* Media queries Tablette*/
@@ -371,11 +416,6 @@ header img {
 }
 
 /* Media queries Tablette*/
-@media only screen and (min-width: 700px) {
-  .section-recherche {
-    padding: 0;
-  }
-}
 /* Media queries Desktop*/
 .section-recherche {
   display: flex;
@@ -394,7 +434,7 @@ header img {
 }
 
 .section-nav {
-  padding: 5% 5% 10% 5%;
+  padding: 5% 5% 9% 5%;
 }
 .section-nav li i {
   margin-right: 10%;
@@ -402,7 +442,7 @@ header img {
 }
 
 .section-nav h2, .section-resto h2 {
-  margin: 6% 3% 6% 3%;
+  margin: 7% 3% 6% 3%;
 }
 
 li {
@@ -494,8 +534,8 @@ footer a:visited, footer a:link {
   display: flex;
   align-items: center;
   border-radius: 20px 20px 20px 20px;
-  padding: 5%;
-  margin: 2% 0% 6% 0%;
+  padding: 8% 5%;
+  margin: 2% 0% 7% 0%;
   background-color: #F6F6F6;
   box-shadow: 5px 5px 5px #EAEAEA;
 }
@@ -511,8 +551,7 @@ footer a:visited, footer a:link {
 .button .button-text {
   width: 100%;
 }
-
-.button li {
+.button .li {
   align-items: center;
 }
 
@@ -561,14 +600,14 @@ footer a:visited, footer a:link {
 
 .btn-nouveau {
   display: inline-block;
-  position: relative;
-  top: -200px;
-  right: -230px;
+  position: absolute;
+  top: 1rem !important;
+  right: 1rem !important;
   background-color: #99E2D0;
   text-transform: capitalize;
   color: #007B53;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   padding: 2% 3%;
 }
 
@@ -576,46 +615,62 @@ footer a:visited, footer a:link {
   visibility: hidden;
 }
 
-.heart-icon2 {
+.div-heart, .div-h1-heart {
   position: relative;
-  left: -100px;
-  font-weight: 100;
-  color: linear-gradient(#EA72DA, #9356dc);
+  background-color: black;
+  width: 2rem;
+  height: 3rem;
+}
+.div-heart::before, .div-h1-heart::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(#EA72DA, #9356dc);
+  transition: 0.3s;
+}
+.div-heart:active::before, .div-h1-heart:active::before {
+  opacity: 1;
+}
+.div-heart:active .far, .div-h1-heart:active .far {
+  opacity: 0;
 }
 
-.h1-heart .heart-icon1, .h1-heart .heart-icon2 {
+.div-h1-heart .heart-icon {
+  background-color: #F6F6F6 !important;
+}
+
+.div-heart .heart-icon {
+  background-color: white !important;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
   font-size: 25px;
-  margin-left: 5%;
 }
 
-/* */
 .price-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  position: relative;
-  top: -20px;
-  right: -150px;
-  border-radius: 0px 20px 20px 0px;
-  font-weight: 700;
-  margin-right: 10%;
+  margin-right: 2%;
 }
 
 .validation-button {
-  visibility: hidden;
-  display: flex;
+  background-color: #99E2D0;
+  padding: 1rem;
+  width: 2.3rem;
+  height: 3.6rem;
+  transition: all 0.5s ease;
   align-items: center;
   justify-content: center;
-  justify-items: center;
-  height: 90px;
-  width: 60px;
-  position: relative;
-  top: -112px;
-  right: -350px;
-  border-radius: 0px 20px 20px 0px;
-  padding: 2% 3% 2% 1%;
-  background-color: #99E2D0;
+  display: flex;
+  margin: -1rem -5rem -1rem 1rem;
 }
 
 .fa-check-circle {
@@ -643,16 +698,15 @@ footer a:visited, footer a:link {
     width: 100%;
     justify-content: center;
   }
-
-  .button {
+  .contener-button .button {
     width: 27%;
     margin: 1% 3% 1% 1%;
-    padding: 2%;
+    padding: 4%;
   }
-  .button li, .button .span-icone, .button i {
+  .contener-button .button li, .contener-button .button .span-icone, .contener-button .button i {
     font-size: 19px;
   }
-  .button .button-text {
+  .contener-button .button .button-text {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -660,18 +714,28 @@ footer a:visited, footer a:link {
   }
 
   .span-icone {
-    left: -30px;
+    left: -35px;
     padding: 1.5% 3%;
+    left: -35px;
   }
 
   .button-explorer, .order-button {
     padding: 3%;
-    font-size: 22px;
+  }
+
+  .button-explorer {
+    margin: 2%;
   }
 
   .btn-nouveau {
     top: -200px;
     right: -230px;
+  }
+
+  .validation-button {
+    width: 2.3rem;
+    height: 3rem;
+    margin: -1rem -5rem -1rem 1rem;
   }
 }
 /* Media queries Desktop*/
@@ -679,9 +743,16 @@ footer a:visited, footer a:link {
   .button li, .button .span-icone, .button i {
     font-size: 22px;
   }
+
+  .div-heart:hover::before {
+    opacity: 1;
+  }
+  .div-heart:hover .far {
+    opacity: 0;
+  }
 }
 .section-resto {
-  padding: 10% 5% 20% 5%;
+  padding: 9% 5% 20% 5%;
   background-color: #F6F6F6;
 }
 .section-resto img {
@@ -694,12 +765,18 @@ footer a:visited, footer a:link {
 .contener-resto-nouveau, .contener-resto {
   box-shadow: 5px 5px 5px 5px #EAEAEA;
   border-radius: 20px 20px 20px 20px;
-  margin: 5% 2%;
+  margin: 6% 2%;
+  background-color: white;
+  padding-bottom: 10%;
+}
+
+.contener-resto-nouveau {
+  position: relative;
 }
 
 .contener-resto-text {
   height: 30px;
-  margin: 3% 5% 0% 5%;
+  margin: 3% 3% 0% 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -708,13 +785,19 @@ footer a:visited, footer a:link {
   align-items: center;
 }
 
+.text {
+  width: 80%;
+}
+
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
+  .section-recherche {
+    padding: 0;
+  }
   .section-recherche h1 {
     margin: 2%;
   }
-
-  .section-recherche p, .button-explorer {
+  .section-recherche h1 p {
     margin: 2%;
   }
 
@@ -726,6 +809,7 @@ footer a:visited, footer a:link {
   .contener-resto, .contener-resto-nouveau {
     width: 45%;
     margin-top: 1%;
+    padding-bottom: 5%;
   }
 }
 /* Media queries Desktop*/
@@ -734,7 +818,7 @@ footer a:visited, footer a:link {
   border-radius: 40px 40PX 0PX 0PX;
   padding: 5% 5% 15% 5%;
   position: relative;
-  top: -35px;
+  top: -50px;
 }
 .main-menu h2 {
   width: 12%;
@@ -757,21 +841,53 @@ footer a:visited, footer a:link {
   margin: 5% 0%;
 }
 
+/*
 .foodlist {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white; 
+    border-radius: 20px; 
+    box-shadow: 5px 5px 5px $background-color-secondary;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+*/
+.foodlist {
+  display: flex;
+  align-items: flex-end;
+  max-width: 100%;
+  position: relative;
+  border-radius: 15px;
+  padding: 7px 10px 5px 10px;
+  margin-bottom: 4%;
+  font-size: 0.8rem;
+  box-shadow: -2px 2PX 10px #C5C5C5;
   overflow: hidden;
-  white-space: nowrap;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #EAEAEA;
-  padding: 5%;
-  margin-bottom: 10%;
+  cursor: pointer;
+  animation: menu-item 1s both;
 }
 
+/*
 .food-text {
-  display: flex;
-  flex-wrap: wrap;
-  height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex:1
+    height : 20px;
+    justify-content: space-between;
+}
+*/
+.food-text {
+  flex: 1;
+  overflow: hidden;
+}
+
+.price-button {
+  overflow: hidden;
+}
+
+.entrees, .plats, .desserts {
   justify-content: space-between;
+  padding: 0;
 }
 
 /* Media queries Tablette*/
