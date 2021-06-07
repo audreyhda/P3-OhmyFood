@@ -22,6 +22,10 @@ footer h4{
     font-size: 17px;
     margin-bottom: 5%;
 }
+a:visited ,  a:link {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* Page accueil*/
 .section-recherche h1{
@@ -48,7 +52,6 @@ footer h4{
      font-weight: 500;
      font-size: 16px;
 }
-
 .text h3 {
     line-height: 1.5rem;
     font-size: 18px;
@@ -103,53 +106,83 @@ footer h4{
     line-height: 2rem;
 }
 /* Media queries Tablette*/
+
 @media only screen and (min-width: 700px) {
-.section-recherche h1 , .h1-heart h1 {
-    font-size: 34px;
-}
-.section-nav h2 , .section-resto h2 , .main-menu h2 {
-    font-size: 30px;
-}
-.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i , .foodlist h3  {
-    font-size: 25px;
-}
-.section-recherche p , .button-explorer , .foodlist p , , .price-button {
-    font-size: 22px;
-}
-.header-nav  p ,  .header-nav i {
+
+.section-recherche h1 , .h1-heart h1  {
     font-size: 20px;
 }
-
-.contener-resto p , .contener-resto-nouveau p{
-    font-size: 19px;
+.h1-heart  h1 {
+    font-size: 35px;
+}
+.section-nav h2 , .section-resto h2 {
+    font-size: 20px;
+    line-height: 1rem;
+}
+.main-menu h2 {
+    font-size: 20px;
+}
+.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i , .foodlist h3  {
+    font-size: 18px;
+    line-height: 1rem;
+}
+.section-recherche p , .button-explorer , .foodlist p  , .price-button {
+    font-size: 15px;
+    line-height: 1rem;
+}
+.header-nav  p ,  .header-nav i {
+    font-size: 15px;
+    line-height: 1rem;
+}
+.food-text {
+    letter-spacing: .2rem;
+    & h3 {
+    line-height: 2rem;
+    }
+}
+.contener-resto p , .contener-resto-nouveau p {
+    font-size: 15px;
+}
+.contener-button li{
+    font-size: 12px;
 }
 .button-explorer, .order-button {
-    font-size: 22px;
+    font-size: 15px;
 }
-.button-text {
-    font-size: 16px;
+.button-text  {
+    font-size: 10px;
 }
-
+footer li {
+    font-size: 15px;
+    line-height: 0rem;
+}
 }
 
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
-.header-nav  p ,  .header-nav i{
+/*.header-nav  p ,  .header-nav i{
     font-size: 22px;
 }
 .section-recherche h1 , .h1-heart h1 {
-    font-size: 40px;
-}
- .section-recherche p , .button-explorer{
-    font-size: 25px;
-}
-.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i{
     font-size: 27px;
 }
+ .section-recherche p , .button-explorer{
+    font-size: 22px;
+}
+.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i{
+    font-size: 22px;
+}
 .contener-resto p , .contener-resto-nouveau p{
-    font-size: 24px;
+    font-size: 22px;
 }
 .button-text {
     font-size: 22px;
+}
+*/
+.contener-button li{
+    font-size: 15px;
+}
+.food-text {
+    letter-spacing: 0;
 }
 }

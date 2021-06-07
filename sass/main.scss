@@ -9,8 +9,7 @@
 
 // 2. UTILS 
 @import
-  'utils/variables',
-  'utils/transitions';
+  'utils/variables';
 
 
 // 3. LAYOUTS 
@@ -21,7 +20,8 @@
 
 // 4. COMPONENTS
 @import
-  'components/button';
+  'components/button',
+  'components/transitions';
 
 // 5. PAGES 
 @import

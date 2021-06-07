@@ -21,7 +21,14 @@
         </div>
 
         <header>
-            <img class="Logo-accueil" src="./public/image/logo/ohmyfood.png" alt="logo Oh My Food"> 
+            <div class="header-menu"> 
+                <picture class="logo-accueil" >
+                <source  media="(min-width:700px)" srcset="./public/image/logo/ohmyfood@2x.svg">
+
+                <img  src="./public/image/logo/ohmyfood.png" alt="logo Oh My Food" >
+            </picture>
+            </div>
+
             <div class="header-nav" >
                 <a><i class="fas fa-map-marker-alt"></i> 
                 </a>
@@ -47,92 +54,104 @@
                         <ol>        
                             <li class="button"> 
                                 <span class="span-icone">1</span>
-                                <div class="button-text"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant
-                                </div>
+                                <i class="fas fa-mobile-alt btn-icon"></i>Choisissez un restaurant
                             </li>         
                             <li class="button">
                                 <span class="span-icone">2</span>
-                                <div class="button-text"><i class="fas fa-list-ul"></i>Composez votre menu
-                                </div>
+                                <i class="fas fa-list-ul btn-icon" ></i>Composez votre menu                         
                             </li>              
                             <li class="button">
                                 <span class="span-icone">3</span>
-                                <div class="button-text"><i class="fas fa-store"></i>Dégustez au restaurant
-                                </div>
+                                <i class="fas fa-store btn-icon"></i>Dégustez au restaurant
                             </li>
                         </ol>
                     </div>    
                 </div>  
             </section>
 
-            <section class="section-resto">    
+            <section class="section-resto">  
+
                 <h2> Restaurants</h2>
-                <div class="div-resto"> 
-                    <div class="contener-resto-nouveau"> 
-                        <img class="photo-palette" src="./public/image/restaurants/palette.jpg" alt="Restaurant la Palette du goût"> 
-                        <div class="contener-resto-text"> 
-                            <div class="text"> 
-                            <h3> La palette du goût</h3>
-                            <p> Ménilmontant</p> 
-                        </div>
-                        <div class="div-heart">
-                            <i class="far fa-heart heart-icon">
-                            </i>
-                            <i class="fas fa-heart heart-icon">
-                            </i>
-                        </div>
-                    </div>
-                    <div class="btn-nouveau">nouveau
-                    </div>
-                </div>  
 
-                    <div class="contener-resto-nouveau">  
-                        <img class="photo-note" src="./public/image/restaurants/note.jpg" alt="Restaurant la Note enchantée"> 
-                        <div class="contener-resto-text">
-                            <div class="text"> 
-                                <h3> La note enchantée </h3>
-                                <p> Charonne</p> 
-                        </div>
-                        <div class="div-heart">
-                            <i class="far fa-heart heart-icon "></i>
-                            <i class="fas fa-heart heart-icon "></i>
-                        </div>
-                    </div>
-                    <div class="btn-nouveau">nouveau
-                    </div>
-                </div>  
+                <div class="div-resto">
 
-                <div class="contener-resto">   
-                    <img class="photo-francaise" src="./public/image/restaurants/francaise.jpg" alt="Restaurant A la française"> 
-                    <div class="contener-resto-text">
-                        <div class="text">
-                            <h3> A la française </h3>
-                            <p> Cité Rouge</p> 
-                        </div>         
-                        <div class="div-heart">
-                            <i class="far fa-heart heart-icon"></i>
-                            <i class="fas fa-heart heart-icon"></i>
+                    <a class="resto" href="palette.html"> 
+                        <div    class="contener-resto-nouveau"> 
+                            <img class="photo-palette" src="./public/image/restaurants/palette.jpg" alt="Restaurant la Palette du goût"> 
+                            <div class="contener-resto-text"> 
+                                <div class="text"> 
+                                    <h3> La palette du goût</h3>
+                                    <p> Ménilmontant</p> 
+                                </div>
+                                <div class="div-heart">
+                                    <i class="far fa-heart heart-icon">
+                                    </i>
+                                    <i class="fas fa-heart heart-icon">
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="btn-nouveau">nouveau
+                            </div>
                         </div>
-                    </div>
-                    <div class="btn-nouveau">nouveau
-                    </div>
-                </div>  
+                    </a>
+                
 
-                <div class="contener-resto">   
-                    <img class="photo-delice" src="./public/image/restaurants/delice.jpg" alt="Restaurant le Délice des sens"> 
-                    <div class="contener-resto-text">
-                        <div class="text"> 
-                            <h3> Le délice des sens </h3>
-                            <p> Folie-Méricourt</p> 
+                    <a class="resto" href="note.html"> 
+                        <div class="contener-resto-nouveau">  
+                            <img class="photo-note" src="./public/image/restaurants/note.jpg" alt="Restaurant la Note enchantée"> 
+                            <div class="contener-resto-text">
+                                <div class="text"> 
+                                    <h3> La note enchantée </h3>
+                                    <p> Charonne</p> 
+                                </div>
+                                <div class="div-heart">
+                                    <i class="far fa-heart heart-icon "></i>
+                                    <i class="fas fa-heart heart-icon "></i>
+                                </div>  
+                            </div>         
+                            <div class="btn-nouveau">nouveau
+                            </div>
+                        </div>  
+                        
+                    </a>
+
+                    <a class="resto" href="francaise.html"> 
+                        <div class="contener-resto">   
+                            <img class="photo-francaise" src="./public/image/restaurants/francaise.jpg" alt="Restaurant A la française"> 
+                            <div class="contener-resto-text">
+                                <div class="text">
+                                    <h3> A la française </h3>
+                                    <p> Cité Rouge</p> 
+                                </div>         
+                                <div class="div-heart">
+                                    <i class="far fa-heart heart-icon"></i>
+                                    <i class="fas fa-heart heart-icon"></i>
+                                </div>
+                            </div>
+                            <div class="btn-nouveau">nouveau
+                            </div>
+                        </div>  
+                    </a>
+                    
+
+                    <a class="resto" href="delice.html"> 
+                        <div class="contener-resto">   
+                            <img class="photo-delice" src="./public/image/restaurants/delice.jpg" alt="Restaurant le Délice des sens"> 
+                            <div class="contener-resto-text">
+                                <div class="text"> 
+                                    <h3> Le délice des sens </h3>
+                                    <p> Folie-Méricourt</p> 
+                                </div>
+                                <div class="div-heart">
+                                    <i class="far fa-heart heart-icon"></i>
+                                    <i class="fas fa-heart heart-icon"></i>
+                                </div>
+                            </div>
+                            <div class="btn-nouveau">nouveau
+                            </div>
                         </div>
-                        <div class="div-heart">
-                            <i class="far fa-heart heart-icon"></i>
-                            <i class="fas fa-heart heart-icon"></i>
-                        </div>
-                    </div>
-                    <div class="btn-nouveau">nouveau
-                    </div>
-                </div>   
+                    </a> 
+                </div>  
             </section>
         </main>
 

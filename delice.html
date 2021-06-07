@@ -12,16 +12,21 @@
     </head>
 
     <body>
-        <header>
+        <header>    
             <div class="header-menu"> 
-                <a class="arrow" href="accueil.html">
+                 <a class="arrow" href="accueil.html">
                     <i class="fas fa-arrow-left"></i>
                 </a>
-                <img class="Logo-accueil" src="./public/image/logo/ohmyfood.png" alt="logo Oh My Food"> 
+                <picture class="Logo-accueil" >
+                <source  media="(min-width:700px)" srcset="./public/image/logo/ohmyfood@2x.svg">
+
+                <img  src="./public/image/logo/ohmyfood.png" alt="logo Oh My Food" >
+            </picture>
             </div>
         </header>
         
     <main>
+    
         <img class="photo-resto" src="./public/image/restaurants/delice.jpg" alt="Restaurant le Délice des sens"> 
 
         <section class="main-menu"> 
@@ -61,7 +66,9 @@
                         35€
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
                 
@@ -75,7 +82,9 @@
                         20€ 
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,7 +102,9 @@
                         40€
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
             
@@ -106,7 +117,9 @@
                         35€ 
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
 
@@ -119,7 +132,9 @@
                         44€
                     </div>
                     <div class="validation-button">
-                    <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,7 +151,9 @@
                         18€
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
 
@@ -149,7 +166,9 @@
                         22€
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i> 
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
 
@@ -162,7 +181,9 @@
                         23€ 
                     </div>
                     <div class="validation-button">
-                        <i class="fas fa-check-circle"></i>
+                        <div class="validate-button-icon">
+                            <i class="fas fa-check-circle"></i> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,10 +191,10 @@
             <div class="order-button"> 
                 Commander
             </div>
-         </section>
+        </section>
     </main>
-        
-    <footer>
+
+    <footer class="footer-menu">
         <h4> ohmyfood </h4>
         <ul> 
             <li>

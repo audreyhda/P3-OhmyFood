@@ -19,6 +19,11 @@ footer {
         text-decoration: none;
     }
 }
+.footer-menu {
+    position: relative; 
+    top: -60px;
+    height: 120%;
+}
 .icone-footer {
     display: flex;
 }
@@ -32,41 +37,32 @@ footer {
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
 footer {
-    padding: 2%;
-    & ul {
-    display:flex;
-    flex-wrap: wrap;
-    }  
+    padding: 2% 4%;
     & h4 {
-    font-size: 25px;
     margin-bottom: 2%;
     }     
     & li {
-    font-size: 15px;
     width: 50%;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    
     }
 }
+.section-resto {
+    border-radius: 40px 40PX 0PX 0PX ;
+}
 .icone-footer{
-    font-size: 15px;
     width: 50%;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    align-items: center;
     & li{
     flex-wrap: nowrap;
-    }
-    & i {
-    font-size: 18px;
     }
 }
 }
 
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
-
-footer li , .icone-footer{
-    font-size: 20px;
-}
-footer h4 {
-    font-size: 25px;
+footer {
+    border-radius: 0PX 0PX 40px 40PX;
 }
 }

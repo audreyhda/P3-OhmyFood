@@ -1,4 +1,6 @@
 .section-recherche {
+    position: relative;
+    top: -20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,11 +11,11 @@
     padding: 0% 15%;
     }
     & p {  
+    width:100%;
     text-align: center;
     margin: 5% 0%;
     }
 }
-
 .section-nav {
     padding: 5% 5% 9% 5%;
     & li i {
@@ -30,7 +32,12 @@ li {
 
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
-
+.header-nav{
+    border-radius: 40px 40PX 0PX 0PX;
+}
+.section-recherche {
+    border-radius: 0PX 0PX 40px 40PX;
+}
 }
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
