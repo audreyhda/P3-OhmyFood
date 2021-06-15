@@ -1,5 +1,5 @@
 .section-resto {
-    padding: 9% 5% 20% 5%;
+    padding: 9% 5% 10% 5%;
     background-color: $background-color-primary;
     & img {
     object-fit: cover;
@@ -65,7 +65,7 @@
 }
 .contener-resto , .contener-resto-nouveau {
     width:325px;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
 }
 }
 
@@ -79,5 +79,11 @@ body {
 }
 .section-recherche, .section-nav, .section-resto {
     padding: 1%;
+}
+}
+/* Media queries Big Desktop*/
+@media only screen and (min-width: 1464px) {
+.contener-resto , .contener-resto-nouveau {
+    width:630px;
 }
 }

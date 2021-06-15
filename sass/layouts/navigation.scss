@@ -1,14 +1,15 @@
 .section-recherche {
     position: relative;
-    top: -20px;
+    z-index:-1;
+    top: -40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: $background-color-primary;
-    padding: 12% 7%;
+    padding: 10% 7%;
     & h1{
     text-align: center;
-    padding: 0% 15%;
+    padding: 0% 5%;
     }
     & p {  
     width:100%;
@@ -17,14 +18,14 @@
     }
 }
 .section-nav {
-    padding: 5% 5% 9% 5%;
+    padding: 5%;
     & li i {
     margin-right: 10%;
     margin-left: 0%;    
     }
 }
 .section-nav h2 , .section-resto h2{
-    margin: 7% 3% 6% 3% ;
+    margin: 5% 3% 6% 3% ;
 }
 li {
     list-style: initial;
@@ -32,14 +33,18 @@ li {
 
 /* Media queries Tablette*/
 @media only screen and (min-width: 700px) {
-.header-nav{
-    border-radius: 40px 40PX 0PX 0PX;
-}
 .section-recherche {
-    border-radius: 0PX 0PX 40px 40PX;
+    top: -30px;
 }
 }
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
 
 }
+/* Media queries Desktop*/
+@media only screen and (min-width: 1100px) {
+.section-recherche {
+    top: -40px;
+}
+}
+
