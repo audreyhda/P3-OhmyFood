@@ -67,7 +67,6 @@ a:visited ,  a:link {
 .contener-resto-text .fa-heart:before {
     width: 18px;
 }
-
 /* Pages Menu */
 .restaurant h1 , .main-menu h1 {
     font-family:  'shrikhand';
@@ -159,25 +158,6 @@ footer li {
 
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
-/*.header-nav  p ,  .header-nav i{
-    font-size: 22px;
-}
-.section-recherche h1 , .h1-heart h1 {
-    font-size: 27px;
-}
- .section-recherche p , .button-explorer{
-    font-size: 22px;
-}
-.contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i{
-    font-size: 22px;
-}
-.contener-resto p , .contener-resto-nouveau p{
-    font-size: 22px;
-}
-.button-text {
-    font-size: 22px;
-}
-*/
 .contener-button li{
     font-size: 15px;
 }

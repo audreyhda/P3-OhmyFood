@@ -3,8 +3,6 @@ body {
   margin: auto;
 }
 
-/* Media queries Tablette*/
-/* Media queries Desktop*/
 main, header, footer {
   font-family: "roboto", sans-serif;
 }
@@ -197,25 +195,6 @@ a:visited, a:link {
 }
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
-  /*.header-nav  p ,  .header-nav i{
-      font-size: 22px;
-  }
-  .section-recherche h1 , .h1-heart h1 {
-      font-size: 27px;
-  }
-   .section-recherche p , .button-explorer{
-      font-size: 22px;
-  }
-  .contener-resto h3, .contener-resto-nouveau h3 , .contener-resto i, .contener-resto-nouveau i{
-      font-size: 22px;
-  }
-  .contener-resto p , .contener-resto-nouveau p{
-      font-size: 22px;
-  }
-  .button-text {
-      font-size: 22px;
-  }
-  */
   .contener-button li {
     font-size: 15px;
   }
@@ -693,10 +672,6 @@ footer a:visited, footer a:link {
   .div-heart:active .far, .div-h1-heart:active .far {
     opacity: 0;
   }
-
-  .h1-heart .fa-heart {
-    font-size: 44px;
-  }
 }
 /* Sélection d'un plat*/
 .foodlist:hover > .validation-button {
@@ -715,28 +690,17 @@ footer a:visited, footer a:link {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(540deg);
   }
 }
-/*
-.validate-button-icon {
-    transition: transform 1.5s;
-}
-
-.validate-button-icon :hover {
-    transform: rotate(-720deg);
-
-}
-*/
-/* heart*/
 /* Apparition progressive*/
 .main-menu .entrees {
-  animation-name: appearing;
-  animation-duration: 3s;
-  animation-timing-function: ease;
+  animation-name: appearing-entrees;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
 }
 
-@keyframes appearing {
+@keyframes appearing-entrees {
   0% {
     opacity: 0;
   }
@@ -745,12 +709,13 @@ footer a:visited, footer a:link {
   }
 }
 .main-menu .plats {
-  animation-name: appearing;
-  animation-duration: 4s;
-  animation-timing-function: cubic-bezier(5, 0.7, 0.1, 0.1);
+  animation-name: appearing-plats;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
 }
 
-@keyframes appearing {
+@keyframes appearing-plats {
   0% {
     opacity: 0;
   }
@@ -759,12 +724,13 @@ footer a:visited, footer a:link {
   }
 }
 .main-menu .desserts {
-  animation-name: appearing;
-  animation-duration: 5s;
-  animation-timing-function: ease;
+  animation-name: appearing-desserts;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
 }
 
-@keyframes appearing {
+@keyframes appearing-desserts {
   0% {
     opacity: 0;
   }
@@ -826,8 +792,6 @@ footer a:visited, footer a:link {
     z-index: -19999;
   }
 }
-/* Media queries Tablette*/
-/* Media queries Desktop*/
 .section-resto {
   padding: 9% 5% 10% 5%;
   background-color: #F6F6F6;
@@ -912,7 +876,7 @@ footer a:visited, footer a:link {
     width: 440px;
   }
 
-  body {
+  .container {
     margin: 0% 4% 2% 4%;
   }
 
@@ -941,6 +905,10 @@ footer a:visited, footer a:link {
 .photo-resto {
   object-fit: cover;
   width: 100%;
+}
+
+.photo-resto-note {
+  height: 330px;
 }
 
 .restaurant {
@@ -1018,6 +986,10 @@ footer a:visited, footer a:link {
     border-radius: 40px 40PX 0PX 0PX;
   }
 }
+.photo-resto-note {
+  height: 500px;
+}
+
 /* Media queries Desktop*/
 @media only screen and (min-width: 990px) {
   .entrees, .plats, .desserts {
@@ -1026,6 +998,10 @@ footer a:visited, footer a:link {
 
   .foodlist {
     width: 30%;
+  }
+
+  .photo-resto-note {
+    height: 730px;
   }
 }
 
