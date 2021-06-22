@@ -1,0 +1,122 @@
+/* Sélection d'un plat*/
+
+.foodlist:hover > .validation-button{
+margin-right:-1rem;
+}
+.foodlist:hover .validate-button-icon {
+animation-name: rotating;
+animation-duration:.5s;
+animation-timing-function: linear;
+animation-iteration-count: 1;
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
+
+/* Apparition progressive*/
+
+.main-menu .entrees {
+    animation-name: appearing-entrees;
+    animation-duration: 2.5s;
+    animation-timing-function:ease-out;
+}
+@keyframes appearing-entrees {
+0%{
+        opacity:0;
+    }
+100% {
+        opacity: 1;
+    }
+}
+.main-menu .plats {
+    animation-name: appearing-plats;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+}
+@keyframes appearing-plats {
+0%{
+        opacity:0;
+    }
+100% {
+        opacity: 1;
+    }
+}
+.main-menu .desserts {
+    animation-name: appearing-desserts;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;   
+    animation-delay: 1s;
+}
+@keyframes appearing-desserts {
+0%{
+        opacity:0;
+    }
+100% {
+        opacity: 1;
+    }
+}
+
+/* Loading spinner*/
+.loading-spinner {
+    z-index:1;
+    display:flex;
+    visibility:visible;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: spinner 3s ;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    background-color: $background-color-secondary ;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.loading-spinner p {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: shrikhand;
+    position: absolute;
+    color: black;
+}
+.spinner {
+    position: absolute;
+  width: 200px;
+  height: 200px;
+    border-radius: 50%;
+  border: 16px solid transparent;
+  border-top-color:  $color-button-primary ;
+  border-right-color: $color-button-secondary;
+  border-bottom-color: $color-button-tertiary;
+  border-left-color: rgba(255, 255, 255, 0.2);
+  animation: spin 3s linear infinite;
+}
+ @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+ }
+@keyframes spinner {
+  0% {
+    opacity: 1;
+    z-index:1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -19999;
+  }
+ }
