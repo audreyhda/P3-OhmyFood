@@ -90,10 +90,10 @@ animation-iteration-count: 1;
     color: black;
 }
 .spinner {
-    position: absolute;
+  position: absolute;
   width: 200px;
   height: 200px;
-    border-radius: 50%;
+  border-radius: 50%;
   border: 16px solid transparent;
   border-top-color:  $color-button-primary ;
   border-right-color: $color-button-secondary;
