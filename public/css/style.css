@@ -995,9 +995,11 @@ footer a:visited, footer a:link {
   .entrees, .plats, .desserts {
     display: flex;
   }
+
   .foodlist {
     width: 30%;
   }
+
   .photo-resto-note {
     height: 730px;
   }
